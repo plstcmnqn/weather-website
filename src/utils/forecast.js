@@ -13,11 +13,14 @@ const forecast = (lat,lon,callback)=>{
         else{
         callback(undefined,{
             //name: response.body.location.localtime,
+            wImage: body.current.weather_icons[0],
              message: ('The current temperature is ' + body.current.temperature +'. '+
             body.current.weather_descriptions[0] + '. ' +
-            'Precip: '+ body.current.precip +'%.')
+            'Precip: '+ body.current.precip +'%. Wind: ' + body.current.wind_speed)
             //body: response.body
+            
         })
+        
     }
 })
 }

@@ -40,6 +40,16 @@ header a {
 .portrait {
     width: 250px;
 }
+.weather{
+    height: 200px;
+    width: 100px;
+    display: inline-flex;
+}
+.weather img {
+    margin: auto 5px;
+    float: left;
+    
+}
  
  input {
     border: 1px solid #CCCCCC;
